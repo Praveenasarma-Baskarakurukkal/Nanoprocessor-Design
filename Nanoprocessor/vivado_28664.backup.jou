@@ -1,0 +1,69 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Thu Jun  8 13:39:05 2023
+# Process ID: 28664
+# Current directory: C:/Users/Praveen/Downloads/FinalLab/FinalLab
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20444 C:\Users\Praveen\Downloads\FinalLab\FinalLab\FinalLab.xpr
+# Log file: C:/Users/Praveen/Downloads/FinalLab/FinalLab/vivado.log
+# Journal file: C:/Users/Praveen/Downloads/FinalLab/FinalLab\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Praveen/Downloads/FinalLab/FinalLab/FinalLab.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/Praveen/Downloads/FinalLab/FinalLab/TB_NanoProcessor_behav.wcfg
+source TB_Instruction_Decoder.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top TB_NanoProcessor [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+open_wave_config C:/Users/Praveen/Downloads/FinalLab/FinalLab/TB_NanoProcessor_behav.wcfg
+source TB_NanoProcessor.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top TB_Add_Sub_4 [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top TB_Multiplexer_2_4 [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+open_wave_config C:/Users/Praveen/Downloads/FinalLab/FinalLab/TB_NanoProcessor_behav.wcfg
+source TB_Multiplexer_2_4.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Multiplexer_2_4 [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+open_wave_config C:/Users/Praveen/Downloads/FinalLab/FinalLab/TB_NanoProcessor_behav.wcfg
+source TB_Multiplexer_2_4.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top TB_NanoProcessor [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+current_sim simulation_2
+close_sim
+launch_simulation
+open_wave_config C:/Users/Praveen/Downloads/FinalLab/FinalLab/TB_NanoProcessor_behav.wcfg
+source TB_NanoProcessor.tcl
+close_sim
+current_sim simulation_4
+close_sim
+close_sim

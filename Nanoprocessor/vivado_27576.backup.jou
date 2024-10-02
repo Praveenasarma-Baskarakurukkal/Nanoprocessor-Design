@@ -1,0 +1,344 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Tue Jun  6 06:44:02 2023
+# Process ID: 27576
+# Current directory: C:/Users/Praveen/Downloads/FinalLab/FinalLab
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6504 C:\Users\Praveen\Downloads\FinalLab\FinalLab\FinalLab.xpr
+# Log file: C:/Users/Praveen/Downloads/FinalLab/FinalLab/vivado.log
+# Journal file: C:/Users/Praveen/Downloads/FinalLab/FinalLab\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Praveen/Downloads/FinalLab/FinalLab/FinalLab.xpr
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+refresh_design
+update_compile_order -fileset sources_1
+refresh_design
+update_compile_order -fileset sources_1
+close_design
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Program_ROM [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Program_Counter_3 [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+refresh_design
+close_design
+open_run impl_1
+synth_design -rtl -name rtl_1
+refresh_design
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top RegisterBank [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+refresh_design
+refresh_design
+launch_simulation
+source TB_Decoder_3_8.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top TB_RegisterBank [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+source TB_RegisterBank.tcl
+close_sim
+launch_simulation
+source TB_RegisterBank.tcl
+close_sim
+launch_simulation
+source TB_RegisterBank.tcl
+close_sim
+launch_simulation
+source TB_RegisterBank.tcl
+close_sim
+launch_simulation
+source TB_RegisterBank.tcl
+export_ip_user_files -of_objects  [get_files C:/Users/Praveen/Downloads/FinalLab/FinalLab/FinalLab.srcs/sources_1/new/Buses.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/Praveen/Downloads/FinalLab/FinalLab/FinalLab.srcs/sources_1/new/Buses.vhd
+file delete -force C:/Users/Praveen/Downloads/FinalLab/FinalLab/FinalLab.srcs/sources_1/new/Buses.vhd
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top TB_Instruction_Decoder [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Instruction_Decoder [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+launch_simulation
+source TB_Instruction_Decoder.tcl
+add_files -fileset constrs_1 -norecurse C:/Users/Praveen/Downloads/Basys3Labs.xdc
+import_files -fileset constrs_1 C:/Users/Praveen/Downloads/Basys3Labs.xdc
+close [ open C:/Users/Praveen/Downloads/FinalLab/FinalLab/FinalLab.srcs/sources_1/new/NanoProcessor.vhd w ]
+add_files C:/Users/Praveen/Downloads/FinalLab/FinalLab/FinalLab.srcs/sources_1/new/NanoProcessor.vhd
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top NanoProcessor [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top NanoProcessor [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close [ open C:/Users/Praveen/Downloads/FinalLab/FinalLab/FinalLab.srcs/sources_1/new/AU_7_Seg.vhd w ]
+add_files C:/Users/Praveen/Downloads/FinalLab/FinalLab/FinalLab.srcs/sources_1/new/AU_7_Seg.vhd
+update_compile_order -fileset sources_1
+import_files -norecurse {{D:/Semester 02/Computer organization and digital design/CODD/Lab files/Lab7/Lab 7.srcs/sources_1/new/LUT_16_7.vhd}}
+update_compile_order -fileset sources_1
+current_sim simulation_1
+close_sim
+import_files -norecurse {{D:/Semester 02/Computer organization and digital design/CODD/Lab files/Lab7/Lab 7.srcs/sources_1/new/AU_7_seg.vhd}}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/Praveen/Downloads/FinalLab/FinalLab/FinalLab.srcs/sources_1/new/AU_7_Seg.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/Praveen/Downloads/FinalLab/FinalLab/FinalLab.srcs/sources_1/new/AU_7_Seg.vhd
+import_files -norecurse {{D:/Semester 02/Computer organization and digital design/CODD/Lab files/Lab6/Lab5.srcs/sources_1/new/AU.vhd}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Instruction_Decoder [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top TB_Instruction_Decoder [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+current_sim simulation_7
+close_sim
+launch_simulation
+current_design impl_1
+close_design
+refresh_design
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top NanoProcessor [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+refresh_design
+set_property is_enabled false [get_files  C:/Users/Praveen/Downloads/FinalLab/FinalLab/FinalLab.srcs/constrs_1/imports/Downloads/Basys3Labs.xdc]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Program_Counter_3 [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+refresh_design
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top NanoProcessor [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+refresh_design
+set_property is_enabled true [get_files  C:/Users/Praveen/Downloads/FinalLab/FinalLab/FinalLab.srcs/constrs_1/imports/Downloads/Basys3Labs.xdc]
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+close_design
+open_run impl_1
+export_ip_user_files -of_objects  [get_files C:/Users/Praveen/Downloads/FinalLab/FinalLab/FinalLab.srcs/sources_1/imports/new/AU_7_seg.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/Praveen/Downloads/FinalLab/FinalLab/FinalLab.srcs/sources_1/imports/new/AU_7_seg.vhd
+file delete -force C:/Users/Praveen/Downloads/FinalLab/FinalLab/FinalLab.srcs/sources_1/imports/new/AU_7_seg.vhd
+export_ip_user_files -of_objects  [get_files C:/Users/Praveen/Downloads/FinalLab/FinalLab/FinalLab.srcs/sources_1/imports/new/AU.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/Praveen/Downloads/FinalLab/FinalLab/FinalLab.srcs/sources_1/imports/new/AU.vhd
+file delete -force C:/Users/Praveen/Downloads/FinalLab/FinalLab/FinalLab.srcs/sources_1/imports/new/AU.vhd
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/Praveen/Downloads/FinalLab/FinalLab/FinalLab.srcs/sim_1/new/NanoProcessor_Sim.v w ]
+add_files -fileset sim_1 C:/Users/Praveen/Downloads/FinalLab/FinalLab/FinalLab.srcs/sim_1/new/NanoProcessor_Sim.v
+update_compile_order -fileset sim_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/Praveen/Downloads/FinalLab/FinalLab/FinalLab.srcs/sim_1/new/TB_NanoProcessor.vhd w ]
+add_files -fileset sim_1 C:/Users/Praveen/Downloads/FinalLab/FinalLab/FinalLab.srcs/sim_1/new/TB_NanoProcessor.vhd
+update_compile_order -fileset sim_1
+export_ip_user_files -of_objects  [get_files C:/Users/Praveen/Downloads/FinalLab/FinalLab/FinalLab.srcs/sim_1/new/NanoProcessor_Sim.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/Praveen/Downloads/FinalLab/FinalLab/FinalLab.srcs/sim_1/new/NanoProcessor_Sim.v
+file delete -force C:/Users/Praveen/Downloads/FinalLab/FinalLab/FinalLab.srcs/sim_1/new/NanoProcessor_Sim.v
+launch_simulation
+source TB_Instruction_Decoder.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top TB_Multiplexer_8_4 [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Multiplexer_8_4 [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+launch_simulation
+synth_design -rtl -name rtl_1
+launch_simulation
+launch_simulation
+source TB_Multiplexer_8_4.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top NanoProcessor [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+source TB_Multiplexer_8_4.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+current_design impl_1
+refresh_design
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top NanoProcessor [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source NanoProcessor.tcl
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+refresh_design
+open_run synth_1 -name synth_1
+open_hw
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Praveen/Downloads/FinalLab/FinalLab/FinalLab.runs/impl_1/NanoProcessor.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Praveen/Downloads/FinalLab/FinalLab/FinalLab.runs/impl_1/NanoProcessor.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Praveen/Downloads/FinalLab/FinalLab/FinalLab.runs/impl_1/NanoProcessor.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top TB_NanoProcessor [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Praveen/Downloads/FinalLab/FinalLab/FinalLab.runs/impl_1/NanoProcessor.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Praveen/Downloads/FinalLab/FinalLab/FinalLab.runs/impl_1/NanoProcessor.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Praveen/Downloads/FinalLab/FinalLab/FinalLab.runs/impl_1/NanoProcessor.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Praveen/Downloads/FinalLab/FinalLab/FinalLab.runs/impl_1/NanoProcessor.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Praveen/Downloads/FinalLab/FinalLab/FinalLab.runs/impl_1/NanoProcessor.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw
+close_sim
+current_sim simulation_10
+close_sim
+current_sim simulation_8
+close_sim
+close_sim

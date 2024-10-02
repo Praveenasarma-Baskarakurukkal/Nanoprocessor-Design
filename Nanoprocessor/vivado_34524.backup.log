@@ -1,0 +1,270 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Fri Jun  9 13:27:07 2023
+# Process ID: 34524
+# Current directory: C:/Users/Praveen/Downloads/FinalLab/FinalLab
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7372 C:\Users\Praveen\Downloads\FinalLab\FinalLab\FinalLab.xpr
+# Log file: C:/Users/Praveen/Downloads/FinalLab/FinalLab/vivado.log
+# Journal file: C:/Users/Praveen/Downloads/FinalLab/FinalLab\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Praveen/Downloads/FinalLab/FinalLab/FinalLab.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.1/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Praveen/Downloads/FinalLab/FinalLab/FinalLab.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TB_Multiplexer_2_4' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Praveen/Downloads/FinalLab/FinalLab/FinalLab.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj TB_Multiplexer_2_4_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Praveen/Downloads/FinalLab/FinalLab/FinalLab.srcs/sources_1/new/Multiplexer_2_4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Multiplexer_2_4
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Praveen/Downloads/FinalLab/FinalLab/FinalLab.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto e1fdad1ff98749ce9dd2bc4d63c059bf --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TB_Multiplexer_2_4_behav xil_defaultlib.TB_Multiplexer_2_4 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.Multiplexer_2_4 [multiplexer_2_4_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_multiplexer_2_4
+Built simulation snapshot TB_Multiplexer_2_4_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Praveen/Downloads/FinalLab/FinalLab/FinalLab.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TB_Multiplexer_2_4_behav -key {Behavioral:sim_1:Functional:TB_Multiplexer_2_4} -tclbatch {TB_Multiplexer_2_4.tcl} -view {C:/Users/Praveen/Downloads/FinalLab/FinalLab/TB_NanoProcessor_behav1.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+open_wave_config C:/Users/Praveen/Downloads/FinalLab/FinalLab/TB_NanoProcessor_behav1.wcfg
+WARNING: Simulation object /TB_NanoProcessor/Overflow was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/Zero was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/Reset was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/Clk was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/LED was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/Anode was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/Seven_Segment_Display was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/UUT/Program_Counter_3_0/Address was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/UUT/Program_Counter_3_0/Res was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/UUT/Program_Counter_3_0/Clk was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/UUT/Program_Counter_3_0/MemorySelect was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/UUT/RegisterBank_0/Register_enable was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/UUT/RegisterBank_0/Clk was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/UUT/RegisterBank_0/Reset was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/UUT/RegisterBank_0/Data_Input was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/UUT/RegisterBank_0/Reg0_Out was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/UUT/RegisterBank_0/Reg1_Out was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/UUT/RegisterBank_0/Reg2_Out was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/UUT/RegisterBank_0/Reg3_Out was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/UUT/RegisterBank_0/Reg4_Out was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/UUT/RegisterBank_0/Reg5_Out was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/UUT/RegisterBank_0/Reg6_Out was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/UUT/RegisterBank_0/Reg7_Out was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/UUT/RegisterBank_0/Y was not found in the design.
+source TB_Multiplexer_2_4.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 952.512 ; gain = 24.348
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TB_Multiplexer_2_4_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 952.512 ; gain = 24.348
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Praveen/Downloads/FinalLab/FinalLab/FinalLab.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TB_Multiplexer_2_4' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Praveen/Downloads/FinalLab/FinalLab/FinalLab.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj TB_Multiplexer_2_4_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Praveen/Downloads/FinalLab/FinalLab/FinalLab.srcs/sources_1/new/Multiplexer_2_4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Multiplexer_2_4
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Praveen/Downloads/FinalLab/FinalLab/FinalLab.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto e1fdad1ff98749ce9dd2bc4d63c059bf --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TB_Multiplexer_2_4_behav xil_defaultlib.TB_Multiplexer_2_4 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.Multiplexer_2_4 [multiplexer_2_4_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_multiplexer_2_4
+Built simulation snapshot TB_Multiplexer_2_4_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Praveen/Downloads/FinalLab/FinalLab/FinalLab.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TB_Multiplexer_2_4_behav -key {Behavioral:sim_1:Functional:TB_Multiplexer_2_4} -tclbatch {TB_Multiplexer_2_4.tcl} -view {C:/Users/Praveen/Downloads/FinalLab/FinalLab/TB_NanoProcessor_behav1.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+open_wave_config C:/Users/Praveen/Downloads/FinalLab/FinalLab/TB_NanoProcessor_behav1.wcfg
+WARNING: Simulation object /TB_NanoProcessor/Overflow was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/Zero was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/Reset was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/Clk was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/LED was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/Anode was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/Seven_Segment_Display was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/UUT/Program_Counter_3_0/Address was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/UUT/Program_Counter_3_0/Res was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/UUT/Program_Counter_3_0/Clk was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/UUT/Program_Counter_3_0/MemorySelect was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/UUT/RegisterBank_0/Register_enable was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/UUT/RegisterBank_0/Clk was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/UUT/RegisterBank_0/Reset was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/UUT/RegisterBank_0/Data_Input was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/UUT/RegisterBank_0/Reg0_Out was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/UUT/RegisterBank_0/Reg1_Out was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/UUT/RegisterBank_0/Reg2_Out was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/UUT/RegisterBank_0/Reg3_Out was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/UUT/RegisterBank_0/Reg4_Out was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/UUT/RegisterBank_0/Reg5_Out was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/UUT/RegisterBank_0/Reg6_Out was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/UUT/RegisterBank_0/Reg7_Out was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/UUT/RegisterBank_0/Y was not found in the design.
+source TB_Multiplexer_2_4.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 974.746 ; gain = 1.090
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TB_Multiplexer_2_4_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 974.746 ; gain = 1.090
+set_property top Multiplexer_2_3 [current_fileset]
+update_compile_order -fileset sources_1
+set_property top TB_Multiplexer_2_3 [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Praveen/Downloads/FinalLab/FinalLab/FinalLab.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TB_Multiplexer_2_3' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Praveen/Downloads/FinalLab/FinalLab/FinalLab.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj TB_Multiplexer_2_3_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Praveen/Downloads/FinalLab/FinalLab/FinalLab.srcs/sources_1/new/Multiplexer_2_3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Multiplexer_2_3
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Praveen/Downloads/FinalLab/FinalLab/FinalLab.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto e1fdad1ff98749ce9dd2bc4d63c059bf --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TB_Multiplexer_2_3_behav xil_defaultlib.TB_Multiplexer_2_3 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.Multiplexer_2_3 [multiplexer_2_3_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_multiplexer_2_3
+Built simulation snapshot TB_Multiplexer_2_3_behav
+
+****** Webtalk v2018.1 (64-bit)
+  **** SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+  **** IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Praveen/Downloads/FinalLab/FinalLab/FinalLab.sim/sim_1/behav/xsim/xsim.dir/TB_Multiplexer_2_3_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Jun  9 13:38:41 2023...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Praveen/Downloads/FinalLab/FinalLab/FinalLab.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TB_Multiplexer_2_3_behav -key {Behavioral:sim_1:Functional:TB_Multiplexer_2_3} -tclbatch {TB_Multiplexer_2_3.tcl} -view {C:/Users/Praveen/Downloads/FinalLab/FinalLab/TB_NanoProcessor_behav1.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+open_wave_config C:/Users/Praveen/Downloads/FinalLab/FinalLab/TB_NanoProcessor_behav1.wcfg
+WARNING: Simulation object /TB_NanoProcessor/Overflow was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/Zero was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/Reset was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/Clk was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/LED was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/Anode was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/Seven_Segment_Display was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/UUT/Program_Counter_3_0/Address was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/UUT/Program_Counter_3_0/Res was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/UUT/Program_Counter_3_0/Clk was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/UUT/Program_Counter_3_0/MemorySelect was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/UUT/RegisterBank_0/Register_enable was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/UUT/RegisterBank_0/Clk was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/UUT/RegisterBank_0/Reset was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/UUT/RegisterBank_0/Data_Input was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/UUT/RegisterBank_0/Reg0_Out was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/UUT/RegisterBank_0/Reg1_Out was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/UUT/RegisterBank_0/Reg2_Out was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/UUT/RegisterBank_0/Reg3_Out was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/UUT/RegisterBank_0/Reg4_Out was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/UUT/RegisterBank_0/Reg5_Out was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/UUT/RegisterBank_0/Reg6_Out was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/UUT/RegisterBank_0/Reg7_Out was not found in the design.
+WARNING: Simulation object /TB_NanoProcessor/UUT/RegisterBank_0/Y was not found in the design.
+source TB_Multiplexer_2_3.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TB_Multiplexer_2_3_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 984.566 ; gain = 5.945
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jun  9 13:39:37 2023...
